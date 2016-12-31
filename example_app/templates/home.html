@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2><a href="/?token={{ access_token }}">HelloSign Example</a> - Home</h2>
+
+<!-- Link that triggers please wait modal, and goes to that link -->
+<p><a href="/show_iframe?token={{ access_token }}" onclick="$('#modal_pane2').modal('show'); return true;">
+    Prepare and Sign Agreement</a></p>
+
+<!-- Please wait modal -->
+<div id="modal_pane2"class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Please wait</h4>
+      </div>
+      <div class="modal-body">
+        <p>Preparing a document for you to sign...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

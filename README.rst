@@ -8,9 +8,9 @@ by implementing a simple Flask web application that:
 - shows that Document in an IFrame, and
 - prompts the user to sign that Document.
 
-| HelloSign API documetation:
+| HelloSign API documentation:
 | https://www.hellosign.com/api/reference
-
+|
 | HelloSign SDK for Python
 | https://github.com/HelloFax/hellosign-python-sdk
 
@@ -125,7 +125,9 @@ In the HTML page, javascript is used to add an IFrame to the page::
 
 See also
 ========
-adobe_sign_api: https://github.com/lingthio/adobe_sign_api
+
+- adobe_sign_api: https://github.com/lingthio/adobe_sign_api
+- signinghub_api: https://github.com/lingthio/signinghub_api
 
 
 Contributors
